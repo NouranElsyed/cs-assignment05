@@ -82,6 +82,11 @@
             }
             return true;
         }
+        static void MinMaxArray(int[] arr, ref int max, ref int min)
+        {
+            max = arr.Max();
+            min = arr.Min();
+        }
         static void Main(string[] args)
         {
             #region Q1
@@ -200,6 +205,15 @@
             //bool result02 = isprime(num02);
 
             //Console.WriteLine($"result:{result02}");
+            #endregion
+
+            #region Q6
+            //Console.WriteLine("6.Create a function named MinMaxArray, to return the minimum and maximum values stored in an array, using reference parameters");
+            //int max = 0;
+            //int min = 0;
+            //int[] array06 = { 2, 12, 55 , 74 , 6 };
+            //MinMaxArray(array06,ref max,ref min);
+            //Console.WriteLine($"max : {max}, min : {min}");
             #endregion
 
         }

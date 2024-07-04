@@ -12,11 +12,7 @@ namespace assignment_05
 
 
 
-        static void MinMaxArray(int[] arr , ref int max , ref int min) 
-        {
-            max = arr.Max();
-            min = arr.Min();    
-        }
+   
         static int factorial(int n) 
         {
             int fact = 1;
@@ -40,14 +36,7 @@ namespace assignment_05
   
 
 
-            #region Q6
-            //Console.WriteLine("6.Create a function named MinMaxArray, to return the minimum and maximum values stored in an array, using reference parameters");
-            //int max = 0;
-            //int min = 0;
-            //int[] array06 = { 2, 12, 55 , 74 , 6 };
-            //MinMaxArray(array06,ref max,ref min);
-            //Console.WriteLine($"max : {max}, min : {min}");
-            #endregion
+        
 
             #region Q7
             //Console.WriteLine("7.Create an iterative (non-recursive) function to calculate the factorial of the number specified as parameter");
