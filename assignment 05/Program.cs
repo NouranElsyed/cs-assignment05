@@ -2,6 +2,7 @@
 using System.Threading.Channels;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Xml.Linq;
+using System.Text.Json.Serialization;
 
 namespace assignment_05
 {
@@ -79,7 +80,16 @@ namespace assignment_05
         //    sum = x + y;
         //    mul = x * y;
         //}
-
+        //static int SumArray(params int[] array) 
+        //{
+        //    int sum = 0;
+        //    if (array is not null) 
+        //    {
+        //        for (int i = 0; i < array.Length; i++)
+        //            sum += array[i];   
+        //    }
+        //    return sum;
+        //}
         static void Main(string[] args)
         {
             #region print fun. code
@@ -140,6 +150,15 @@ namespace assignment_05
             //Console.WriteLine(sumResult);
             //Console.WriteLine(mulResult);
 
+            #endregion
+            #region passing by params
+            //int[] numbers = { 1, 2, 3, 4, 5 };
+            //int result = SumArray(numbers);
+            //Console.WriteLine(result);
+            //-----------------------------------
+            //int  a= 10, b = 5, c = 30, d = 45;
+            //string name = "test";
+            //Console.WriteLine("{0}+{1}+{3}={2}{4}" ,a ,b , d,c,name);
             #endregion
 
 
