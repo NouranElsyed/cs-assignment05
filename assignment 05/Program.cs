@@ -26,15 +26,23 @@ namespace assignment_05
 
         //}
 
-        
-        static int sumArry(int[] arr) 
-        {
-        int sum = 0; 
-            arr[0] = 100;
-            for(int i = 0; i < arr.Length; i++) { sum+= arr[i]; }
-            return sum;
-        
-        }
+
+        //static int sumArry(int[] arr) 
+        //{
+        //int sum = 0; 
+        //    arr[0] = 100;
+        //    for(int i = 0; i < arr.Length; i++) { sum+= arr[i]; }
+        //    return sum;
+
+        //}
+        //static int sumArry(ref int[] arr) 
+        //{
+        //int sum = 0; 
+        //    arr[0] = 100;
+        //    for(int i = 0; i < arr.Length; i++) { sum+= arr[i]; }
+        //    return sum;
+
+        //}
 
         static void Main(string[] args)
         {
@@ -58,11 +66,17 @@ namespace assignment_05
 
             #region passing reference type parameters
 
-            int[] number = { 1, 2, 3 };
-            int result = sumArry(number);
-            Console.WriteLine(number[0]);
-            Console.WriteLine(result);
-            Console.WriteLine(number[0]);
+            //int[] number = { 1, 2, 3 };
+            //int result = sumArry(number);
+            //Console.WriteLine(number[0]);
+            //Console.WriteLine(result);
+            //Console.WriteLine(number[0]);
+            //----------------------------------------------
+            //int[] number = { 1, 2, 3 };
+            //int result = sumArry(ref number);
+            //Console.WriteLine(number[0]);
+            //Console.WriteLine(ref result);
+            //Console.WriteLine(number[0]);
             #endregion
 
 
