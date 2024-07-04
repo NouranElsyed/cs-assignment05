@@ -11,16 +11,7 @@ namespace assignment_05
        
 
 
-        static bool isprime(int n) {
-            for (int i = 2;i<n;i++) 
-            {
-                if (n%i == 0) 
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
+
         static void MinMaxArray(int[] arr , ref int max , ref int min) 
         {
             max = arr.Max();
@@ -46,37 +37,8 @@ namespace assignment_05
 
             
 
-            #region Q3
-            //Console.WriteLine("3.Write a c# Function that accept 4 parameters from user and return result of summation and subtracting of two numbers");
-            //int num1 = 3;
-            //int num2 = 4;
-            //int SumResulT , SubsResult;
-            //summationANDsubstract(num1, num2, out SumResulT, out SubsResult);
-            //Console.WriteLine($"sum result: {SumResulT}");
-            //Console.WriteLine($"substract result: {SubsResult}");
-            ////Console.ReadKey();
-            #endregion
+  
 
-            #region Q4
-            //Console.WriteLine("4.Write a program in C# Sharp to create a function to calculate the sum of the individual digits of a given number.");
-            //Console.Write("Enter the number: ");
-            //int num = int.Parse(Console.ReadLine());
-            //int result = sumindividual(num);
-
-            //Console.WriteLine($"result:{result}");
-
-
-            #endregion
-
-            #region Q5
-
-            //Console.WriteLine("5.Create a function named IsPrime, which receives an integer number and retuns true if it is prime, or false if it is not:");
-            //Console.Write("Enter the number: ");
-            //int num02 = int.Parse(Console.ReadLine());
-            //bool result02 = isprime(num02);
-
-            //Console.WriteLine($"result:{result02}");
-            #endregion
 
             #region Q6
             //Console.WriteLine("6.Create a function named MinMaxArray, to return the minimum and maximum values stored in an array, using reference parameters");

@@ -71,6 +71,17 @@
             }
             return sum;
         }
+        static bool isprime(int n)
+        {
+            for (int i = 2; i < n; i++)
+            {
+                if (n % i == 0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
         static void Main(string[] args)
         {
             #region Q1
@@ -180,6 +191,17 @@
 
 
             #endregion
+
+            #region Q5
+
+            //Console.WriteLine("5.Create a function named IsPrime, which receives an integer number and retuns true if it is prime, or false if it is not:");
+            //Console.Write("Enter the number: ");
+            //int num02 = int.Parse(Console.ReadLine());
+            //bool result02 = isprime(num02);
+
+            //Console.WriteLine($"result:{result02}");
+            #endregion
+
         }
     }
 }
