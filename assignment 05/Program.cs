@@ -17,7 +17,13 @@ namespace assignment_05
         //    int temp = x;
         //    x = y; 
         //    y = temp;    
-        
+
+        //}
+        //static void swap(ref int x,ref int y) {
+        //    int temp = x;
+        //    x = y; 
+        //    y = temp;    
+
         //}
         static void Main(string[] args)
         {
@@ -30,7 +36,12 @@ namespace assignment_05
             //swap(a, b);
             //Console.WriteLine("swap");
             //Console.WriteLine($"a = {a} \n b = {b}");
-
+            //--------------------------------------
+            //int a = 10, b = 20;
+            //Console.WriteLine($"a = {a} \n b = {b}");
+            //swap(ref a,ref b);
+            //Console.WriteLine("swap");
+            //Console.WriteLine($"a = {a} \n b = {b}");
 
             #endregion
 
