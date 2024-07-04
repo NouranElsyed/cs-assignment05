@@ -17,6 +17,41 @@
             Console.WriteLine("the value of the parameters in the function");
             Console.WriteLine($"x: {x} \ny: {y}");
         }
+        static int average(int[] arr)
+        {
+            int sum = 0;
+            int NumberOfArr = arr.Length;
+            for (int i = 0; i < arr.Length; i++)
+                sum += arr[i];
+
+            int average = sum / NumberOfArr;
+            Console.WriteLine($"the average: {average}");
+            Console.WriteLine("change a element with index 1 then print:");
+            arr[1] = 20000;
+            Console.WriteLine($"the arr: {arr[0]},{arr[1]},{arr[2]} ");
+            Console.WriteLine("assign a new object in arr then print arr:");
+            arr = new int[] { 15000, 9000, 12500 };
+            Console.WriteLine($"new arr: {arr[0]}, {arr[1]}, {arr[2]}");
+            return average;
+        }
+        static int average2(ref int[] arr)
+        {
+            int sum = 0;
+            int NumberOfArr = arr.Length;
+            for (int i = 0; i < arr.Length; i++)
+                sum += arr[i];
+
+            int average = sum / NumberOfArr;
+            Console.WriteLine($"the average: {average}");
+            Console.WriteLine("change a element with index 1 then print:");
+            arr[1] = 20000;
+
+            Console.WriteLine($"the arr[1]: {arr[0]}, {arr[1]}, {arr[2]}");
+            Console.WriteLine("assign a new object in arr then print arr:");
+            arr = new int[] { 15000, 9000, 12500 };
+            Console.WriteLine($"new arr: {arr[0]}, {arr[1]}, {arr[2]}");
+            return average;
+        }
         static void Main(string[] args)
         {
             #region Q1
@@ -54,6 +89,53 @@
 
             //Console.WriteLine("the value of the var. after calling the function");
             //Console.WriteLine($"C: {C} \nD: {D}");
+            #endregion
+
+            #endregion
+
+            #region Q2
+            //Console.WriteLine("2.Explain the difference between passing (Reference type parameters) by value and by reference then write a suitable c# example.");
+            //// reference type parameters like string , array ...
+            #region 2.1.passing by value 
+            ////-If the method assigns the parameter to refer to a different object,
+            //      //those changes aren't visible from the caller.
+            ////-If the method modifies the state of the object referred to by the parameter,
+            //      //those changes are visible from the caller.
+            //// ex average function
+            //Console.WriteLine("2.1.passing by value ex");
+            //int[] salary = { 10000, 8000, 6500, 12000 };
+            //Console.WriteLine("the value of the var. before calling the function");
+            //Console.WriteLine($"salary: {salary[0]}, {salary[1]}, {salary[2]}");
+
+
+            //average(salary);
+
+            //Console.WriteLine("the value of the var. after calling the function");
+            //Console.WriteLine($"salary: {salary[0]}, {salary[1]}, {salary[2]}");
+            //Console.WriteLine("notes that changed in parameter appeare in the variable but when assign new object that didn't affect on the variable. ");
+
+
+            #endregion
+
+            #region 2.passing by Ref
+            //// If the method assigns the parameter to refer to a different object,
+            //// those changes are visible from the caller.
+            ////If the method modifies the state of the object referred to by the parameter,
+            ////those changes are visible from the caller.
+            //Console.WriteLine("2.passing by Ref ex");
+            //int[] salary2 = { 5000, 7000, 4500 };
+            //Console.WriteLine("the value of the var. before calling the function");
+            //Console.WriteLine($"salary: {salary2[0]}, {salary2[1]}, {salary2[2]}");
+
+
+            //average2(ref salary2);
+
+            //Console.WriteLine("the value of the var. after calling the function");
+            //Console.WriteLine($"salary: {salary2[0]}, {salary2[1]}, {salary2[2]}");
+            //Console.WriteLine("notes that changed in parameter appeare in the variable and when assign new object that affected on the variable.");
+
+
+            ////Console.ReadLine();
             #endregion
 
             #endregion
