@@ -52,6 +52,12 @@
             Console.WriteLine($"new arr: {arr[0]}, {arr[1]}, {arr[2]}");
             return average;
         }
+        static void summationANDsubstract(int x, int y, out int sum, out int subs)
+        {
+            sum = x + y;
+            subs = x - y;
+
+        }
         static void Main(string[] args)
         {
             #region Q1
@@ -138,6 +144,17 @@
             ////Console.ReadLine();
             #endregion
 
+            #endregion
+
+            #region Q3
+            //Console.WriteLine("3.Write a c# Function that accept 4 parameters from user and return result of summation and subtracting of two numbers");
+            //int num1 = 3;
+            //int num2 = 4;
+            //int SumResulT , SubsResult;
+            //summationANDsubstract(num1, num2, out SumResulT, out SubsResult);
+            //Console.WriteLine($"sum result: {SumResulT}");
+            //Console.WriteLine($"substract result: {SubsResult}");
+            ////Console.ReadKey();
             #endregion
         }
     }
