@@ -25,6 +25,17 @@ namespace assignment_05
         //    y = temp;    
 
         //}
+
+        
+        static int sumArry(int[] arr) 
+        {
+        int sum = 0; 
+            arr[0] = 100;
+            for(int i = 0; i < arr.Length; i++) { sum+= arr[i]; }
+            return sum;
+        
+        }
+
         static void Main(string[] args)
         {
             #region print fun. code
@@ -43,6 +54,15 @@ namespace assignment_05
             //Console.WriteLine("swap");
             //Console.WriteLine($"a = {a} \n b = {b}");
 
+            #endregion
+
+            #region passing reference type parameters
+
+            int[] number = { 1, 2, 3 };
+            int result = sumArry(number);
+            Console.WriteLine(number[0]);
+            Console.WriteLine(result);
+            Console.WriteLine(number[0]);
             #endregion
 
 
