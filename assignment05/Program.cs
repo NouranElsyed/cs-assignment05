@@ -87,6 +87,17 @@
             max = arr.Max();
             min = arr.Min();
         }
+        static int factorial(int n)
+        {
+            int fact = 1;
+            while (n > 0)
+            {
+                fact = fact * n;
+                n = n - 1;
+            }
+            return fact;
+        }
+        
         static void Main(string[] args)
         {
             #region Q1
@@ -215,6 +226,17 @@
             //MinMaxArray(array06,ref max,ref min);
             //Console.WriteLine($"max : {max}, min : {min}");
             #endregion
+
+            #region Q7
+            //Console.WriteLine("7.Create an iterative (non-recursive) function to calculate the factorial of the number specified as parameter");
+            //Console.Write("Enter the number: ");
+            //int num03 = int.Parse(Console.ReadLine());
+
+            //Console.WriteLine($"Factorial of the number is: {factorial(num03)}");
+
+            #endregion
+
+         
 
         }
     }
