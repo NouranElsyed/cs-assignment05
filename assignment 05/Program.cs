@@ -10,19 +10,7 @@ namespace assignment_05
 
        
 
-        static int sumindividual(int n) 
-        {
-            int sum = 0;
-            string arrnum = Convert.ToString(n);
-            for (int i = 0; i < arrnum.Length; i++)
-            {
-                n = int.Parse(arrnum.Substring(i,1));
-                //Console.WriteLine(n);
-                sum += n ;
-                //Console.WriteLine(sum);
-            }
-            return sum;
-        }
+
         static bool isprime(int n) {
             for (int i = 2;i<n;i++) 
             {

@@ -58,6 +58,19 @@
             subs = x - y;
 
         }
+        static int sumindividual(int n)
+        {
+            int sum = 0;
+            string arrnum = Convert.ToString(n);
+            for (int i = 0; i < arrnum.Length; i++)
+            {
+                n = int.Parse(arrnum.Substring(i, 1));
+                //Console.WriteLine(n);
+                sum += n;
+                //Console.WriteLine(sum);
+            }
+            return sum;
+        }
         static void Main(string[] args)
         {
             #region Q1
@@ -155,6 +168,17 @@
             //Console.WriteLine($"sum result: {SumResulT}");
             //Console.WriteLine($"substract result: {SubsResult}");
             ////Console.ReadKey();
+            #endregion
+
+            #region Q4
+            //Console.WriteLine("4.Write a program in C# Sharp to create a function to calculate the sum of the individual digits of a given number.");
+            //Console.Write("Enter the number: ");
+            //int num = int.Parse(Console.ReadLine());
+            //int result = sumindividual(num);
+
+            //Console.WriteLine($"result:{result}");
+
+
             #endregion
         }
     }
