@@ -68,6 +68,17 @@ namespace assignment_05
 
         //}
 
+        //static void SumMul(int x, int y , out int sum , out int mul) 
+        //{
+        //    sum = x + y;
+        //    mul = x * y;
+        //}
+
+        //static void SumMul(int x, int y , ref int sum , ref int mul) 
+        //{
+        //    sum = x + y;
+        //    mul = x * y;
+        //}
 
         static void Main(string[] args)
         {
@@ -115,6 +126,20 @@ namespace assignment_05
             //Console.WriteLine(number[0]);
             //Console.WriteLine(ref result);
             //Console.WriteLine(number[0]);
+            #endregion
+            #region  passing by out 
+            //int a = 10 , b = 20 ;
+            //int sumResult, mulResult;
+            //SumMul(a, b, out sumResult, out mulResult);
+            //Console.WriteLine(sumResult);
+            //Console.WriteLine(mulResult);
+            //------------------------------
+            //int a = 10 , b = 20 ;
+            //int sumResult=0 , mulResult=0;
+            //SumMul(a, b, ref sumResult, ref mulResult);
+            //Console.WriteLine(sumResult);
+            //Console.WriteLine(mulResult);
+
             #endregion
 
 
